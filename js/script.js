@@ -57,25 +57,6 @@ $(document).ready(function(){
 	});
 	 
 
-    var ip = "<?php echo $realUserIP; ?>";
-  jQuery.ajax ({
-    type: "GET",
-    url: "http://ipgeobase.ru:7020/geo/?ip=" + ip,
-    dataType: "xml",
-    success: function(xml) {
-      var region = jQuery(xml).find('city').text();
-      jQuery("#geocity").append(region);
-    },
-    error: function() {
-      jQuery("#geocity").append("не определен");
-    }
-  });
-	// $.getJSON("http://www.telize.com/jsonip?callback=?",
-	// 	function(json) {
-	// 		document.write("My IP address is : ", json.ip);
-	// 	}
-	// );
-
 		// $('#calc_form').bootstrapValidator({
 	 //        message: 'This value is not valid',
 	 //        feedbackIcons: {

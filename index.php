@@ -29,6 +29,13 @@
 
   <body>
     <!-- HEADER -->
+    <?php
+      include("SxGeo.php");
+      $SxGeo = new SxGeo('SxGeoCity.dat');
+      $ip = $_SERVER['REMOTE_ADDR'];
+      $city = $SxGeo->get($ip); 
+      
+    ?>
     <div class="block_bg" id="header_bg">
       <div class="container" id="header">
         <div class="row">
@@ -56,7 +63,7 @@
                   <li><a href="#">ОТЗЫВЫ</a></li>
                   <li><a href="#">КЛИЕНТЫ</a></li>
                   <li><a href="#">КОНТАКТЫ</a></li>
-                  <li><a href="#">ВАШ ГОРОД<br><span id="nav_city">Чебоксары</span> <span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                  <li><a href="#">ВАШ ГОРОД<br><span id="nav_city"><?php echo $city['city']['name_ru'];?></span> <span class="glyphicon glyphicon-chevron-down"></span></a></li>
                   
                 </ul>
               </div><!-- /.navbar-collapse -->
@@ -539,21 +546,7 @@
       </div>
     </div>  
     <!-- MODAL END -->
-<?php
-function GetRealIp() {
- if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-   $ip=$_SERVER['HTTP_CLIENT_IP'];
- } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-  $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
- } else {
-   $ip=$_SERVER['REMOTE_ADDR'];
- }
- return $ip;
-}
-$realUserIP = GetRealIp();
-echo $realUserIP;
-?>
-<em>Ваш город:</em> <span id="geocity"></span>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
