@@ -15,6 +15,7 @@
     <link href="css/variables.css" rel="stylesheet">
     <link href="/css/jquery.bxslider.css" rel="stylesheet" />
     <link href="/css/bootstrapValidator.min.css" rel="stylesheet" />
+    <link href="/css/scrollup.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" /> -->
 
      <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
@@ -25,6 +26,9 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    
+    
   </head>
 
   <body>
@@ -58,11 +62,11 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li><a href="#">О НАС</a></li>
-                  <li><a href="#">НАШИ РАБОТЫ</a></li>
-                  <li><a href="#">ОТЗЫВЫ</a></li>
-                  <li><a href="#">КЛИЕНТЫ</a></li>
-                  <li><a href="#">КОНТАКТЫ</a></li>
+                  <li><a href="#jumbo_slider">О НАС</a></li>
+                  <li><a href="#works">НАШИ РАБОТЫ</a></li>
+                  <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                  <li><a href="#clients">КЛИЕНТЫ</a></li>
+                  <li><a href="#contacts">КОНТАКТЫ</a></li>
                   <li><a href="#">ВАШ ГОРОД<br><span id="nav_city"><?php echo $city['city']['name_ru'];?></span> <span class="glyphicon glyphicon-chevron-down"></span></a></li>
                   
                 </ul>
@@ -78,7 +82,7 @@
     <!-- JUMBO-SLIDER -->
     <div class="block_bg" id="jumbo_slider_bg">
 
-      <div class="container" id="jumbo_slider">
+      <div class="container" id="jumbo_slider"><a name="jumbo_slider"></a>
         <div class="row">
           <ul id="jumbo_bxslider">
             <li><img src="/img/jumbo/slider2.png"></li>
@@ -101,35 +105,35 @@
                 <div class="hidden form_error"></div>
                 <label for="inputData1" class="col-xs-8 control-label">Стоимость установки (руб.):</label>
                 <div class="col-xs-5">
-                  <input type="text" class="form-control input-sm" id="stUst" name="stUst">
+                  <input type="text" class="form-control input-sm" id="stUst" name="stUst" value="30000">
                 </div>
               </div>
               <div class="form-group">
               <div class="hidden form_error"></div>
                 <label for="inputData2" class="col-xs-8 control-label">Цена литра бензина (руб.):</label>
                 <div class="col-xs-5">
-                  <input type="text" class="form-control input-sm" id="CenaBenz">
+                  <input type="text" class="form-control input-sm" id="CenaBenz" value="35">
                 </div>
               </div>
               <div class="form-group">
               <div class="hidden form_error"></div>
                 <label for="inputData3" class="col-xs-8 control-label">Цена литра газа (руб.):</label>
                 <div class="col-xs-5">
-                  <input type="text" class="form-control input-sm" id="CenaGaz">
+                  <input type="text" class="form-control input-sm" id="CenaGaz" value="17">
                 </div>
               </div>
               <div class="form-group">
               <div class="hidden form_error"></div>
                 <label for="inputData4" class="col-xs-8 control-label">Расход на 100 км (л):</label>
                 <div class="col-xs-5">
-                  <input type="text" class="form-control input-sm" id="Rashod100">
+                  <input type="text" class="form-control input-sm" id="Rashod100" value="10">
                 </div>
               </div>
               <div class="form-group">
               <div class="hidden form_error"></div>
                 <label for="inputData5" class="col-xs-8 control-label">Ср. суточный пробег (км):</label>
                 <div class="col-xs-5">
-                  <input type="text" class="form-control input-sm" id="SrSutProb">
+                  <input type="text" class="form-control input-sm" id="SrSutProb" value="100">
                 </div>
               </div>
               
@@ -140,11 +144,11 @@
               </div>
             </form>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-4" id="calc_right">
             <p>Результат</p>
-            <div><span id="EconDay"> </span> руб. - экономия в день</div>
-            <div><span id="EconYear"></span> руб. - экономия за год</div>
-            <div><span id="OkupDay"></span> дня - окупаемость ГБО</div>
+            <div><span id="EconDay">180</span> руб. - экономия в день</div>
+            <div><span id="EconYear">65700</span> руб. - экономия за год</div>
+            <div><span id="OkupDay">167</span> дня - окупаемость ГБО</div>
           </div>
         </div>
       </div>
@@ -247,47 +251,54 @@
           <div class="col-xs-12" id="faq_title">Вы можете посмотреть часто задаваемые вопросы и ответы к ним.</div>
         </div>
         <div class="row">
-          <div class="col-xs-12 text-center"><img src="/img/gaz-on_0016_Arrow-.png"></div>
+          <div class="col-xs-12 text-center" id="faq_slide"><img src="/img/gaz-on_0016_Arrow-.png"></div>
         </div>
+        <div id="faq_wrap">
         <div class="row">
           <div data-faq="1" class="col-xs-7 faq_item_left">Вредна ли установка ГБО для двигателя?</div>
         </div>
-        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="1">Нет - это миф! Скорость горения газово-воздушной смеси в сравнении с бензиновой, значительно ниже, поэтому ударные нагрузки на коленвал, поршни, шатуны и т.д. соответственно меньше, а это способствует увеличению общего ресурса двигателя в 1,5 раза.</div>
         <div class="row">
           <div data-faq="2" class="col-xs-7 faq_item_right">Опасно ли ГБО в автомобиле?</div>
         </div>
-        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="2">Современные газовые баллоны, которые устанавливаются на автомобили, не могут взрываться. Даже если их «поджаривать» на открытом огне!</div>
         <div class="row">
           <div data-faq="3" class="col-xs-7 faq_item_left">Какое давление выдерживает газовый баллон?</div>
         </div>
-        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="3">Это зависит от баллона. Как правило, газовый баллон способен выдержать давление до 250 атмосфер. Если вы используете в качестве топлива пропан, то давление его на стенки баллона не превышает 16 атмосфер.</div>
         <div class="row">
           <div data-faq="4" class="col-xs-7 faq_item_right">Можно установить ГБО на турбированный двигатель?</div>
         </div>
-        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="4">Да, можно. Но нужно обязательно ставить инжекторное газобаллонное оборудование, которое способно за счёт создаваемого давления впрыснуть в двигатель столько газа, сколько нужно. Сильное движение воздуха в мотор не является помехой для инжекторного ГБО.</div>
         <div class="row">
           <div data-faq="5" class="col-xs-7 faq_item_left">Каково нормальное соотношение расхода газа и бензина?</div>
         </div>
-        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="5">За норму принят расход газа от 100 (достигается благодаря установке самого современного газового оборудования) до 110 % расхода бензина. Т.е. если у вас расход газа не на 10, а на 20% больше расхода бензина, то вам нужно обратиться в автосервис за диагностикой системы.</div>
         <div class="row">
           <div data-faq="6" class="col-xs-7 faq_item_right">Как часто следует менять воздушный фильтр при использовании ГБО?</div>
         </div>
-        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="6">Замена, как правило, производится в указанный производителем оборудования срок. Если вы часто оказываетесь за городом и совершаете заезды по просёлочным дорогам, то меняйте фильтр чаще. Обычно замена происходит после того, как вы накатаете 10 000 - 12 000 км.</div>
         <div class="row">
           <div data-faq="7" class="col-xs-7 faq_item_left">Правда ли, что после установки оборудования в салоне будет запах газа?</div>
         </div>
-        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="7">Нет, никакого запаха в салоне не будет. Все элементы оборудования проходят проверку на герметичность.</div>
         <div class="row">
           <div data-faq="8" class="col-xs-7 faq_item_right">Сколько времени требуется на установку ГБО?</div>
         </div>
-        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="8">Обычно мы выполняем установку газового оборудования на авто в течение 4-х часов, работа с редкой иномаркой может затянуться до 12 часов. При необходимости, мы выполняем монтаж даже в ночное время суток.</div>
+        <div class="row">
+          <div data-faq="9" class="col-xs-7 faq_item_left">Если установить на авто ГБО, то будет ли работать автомобиль на бензине?</div>
+        </div>
+        <div class="jhidden faq_answer col-xs-10 col-xs-offset-1" data-faq="9">Да, вы сможете использовать и бензин, и газ в качестве топлива. Переключатель с одного топлива на другой будет установлен в салоне вашего автотранспорта.</div>
+        </div>
+        </div>
       </div>
 
     </div>
     <!-- FAQ END -->
     <!-- WORKS -->
     <div class="block_bg" id="works_bg">
-      <div class="container" id="works">
+      <div class="container" id="works"><a name="works"></a>
         
           <div class="row">
           <div class="col-xs-5 block_title">
@@ -334,7 +345,7 @@
     <!-- WORKS END -->
     <!-- REVIEWS -->
     <div class="block_bg" id="rev_bg">
-      <div class="container" id="reviews">
+      <div class="container" id="reviews"><a name="reviews"></a>
         <div class="row">
           <div class="col-xs-12" id="rev_title">
               Отзывы наших клиентов
@@ -344,12 +355,21 @@
           <div class="col-xs-12">
             <ul class="bxslider_rev">
                 <li>
-                  <div class="rev_item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                  <div class="rev_item">Всем привет. Вот решил написать отзывы о газе. Поставил себе Газ на субару и уже приехал почти 9тысыч км. По деньгам в два раза дешевле заправлять машину. Расход на 100км больше на 1.- 1,5 литра больше чем на бензе. так должно быть. Тянет хорошо почти так же ну не заметно даже, что еще нравится нет детонации и движок мягче работает. Масло моторное медленно чернеет. Кто хочет пишите прокачу покажу как едет машина . Газ с вас;-)</div>
                   <div class="rev_author">Роман Subaru Impreza</div>
                 </li>
-                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</li>
-                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
-                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</li>
+                <li>
+                  <div class="rev_item">Всегда негативно относился к газовому оборудованию, после отцовской рено 25 на газу 2-го поколения, с которым постоянно возникали проблемы. Прошло лет восемь, друзья посоветовали поставит газ 4-го поколения. Установил газовое оборудование Диджитроник примерно пол года назад, никакой разницы между бензином и газом не заметил, единственное теперь на 400 км. мне нужно 700 рублей вместо 1300р на бензине. Спасибо Гарант-Газу за то что подобрали оптимальное оборудование для моей машины и за качественно выполненную работу.</div>
+                  <div class="rev_author">Михаил Тойота Королла 1.6</div>
+                </li>
+                <li>
+                  <div class="rev_item">Долго решал ставить, не ставить. Почитал, посоветовался и решил установить ГБО. Начал звонить узнавать где лучше устанавливают, по цене, и качеству обслуживания. Решил устанавливать в Гарант-Газ. Созвонившись, пригнал машину с утра, к вечеру уже была готова. В плане работ, все понравилось, грамотная укладка проводов в моторном отсеке. Своевременное обслуживание. Рекомендую устанавливать в Гарант-Газ</div>
+                  <div class="rev_author">Андрей Ауди А6</div>
+                </li>
+                <li>
+                  <div class="rev_item">Устанавливала 3 месяца назад в этой фирме гбо на свой субарик . Хотела установить brc, т.к. его везде хвалят, НО!!! Когда приехала в гарант-газ и ребята посеветовали kme (он лучше, круче, вообщем отзывы не хуже brc, и стоит чуть дешевле). Поставили оборудование и …. ВСЁ СУПЕР! Работает без вопросов, вспоминаю о том, что еду на газу только, когда заканчивается газ в баллоне и пищит сигнал, и это радует!</div>
+                  <div class="rev_author">Елена Субару Легаси</div>
+                </li>
               </ul>
           </div>
         </div>
@@ -358,7 +378,7 @@
     <!-- REVIEWS END -->
     <!-- CLIENTS -->
     <div class="block_bg" id="clients_bg">
-      <div class="container" id="clients">
+      <div class="container" id="clients"><a name="clients"></a>
         <div class="row">
           <div class="col-xs-5 block_title">
             <div class="row">
@@ -409,7 +429,7 @@
     <!-- CONSULTATION 2 END -->
     <!-- CONTACTS -->
     <div class="block_bg" id="contacts_bg">
-      <div class="container" id="contacts">
+      <div class="container" id="contacts"><a name="contacts"></a>
         
         <div class="row">
           <div class="col-xs-12" id="contacts_title">
@@ -468,6 +488,16 @@
               </div>
 
             </li>
+            <li>
+              <div class="col-xs-2">Адрес:<br><br>ул. 4-я кленовая ,д.6</div>
+              <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Талипов Энвер Османович<br>+7-905-182-13-96</div>
+              <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
+                <div class="map">
+                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
+                </div>
+              </div>
+
+            </li>
           </ul>
          <!--  <div id="bx-pager">
             <a data-slide-index="0" href=""><img src="/img/marks/gaz-on_0014_logo6.jpg.png"></a>
@@ -488,11 +518,11 @@
           <div class="col-xs-3" id="minimap_logo">Gaz-ON</div>
           <div class="col-xs-3" id="minimap_company">
             <div>КОМПАНИЯ</div><br>
-            <div class="minimap_company_item">Выгоды</div>
-            <div class="minimap_company_item">Отзывы</div>
-            <div class="minimap_company_item">Клиенты</div>
-            <div class="minimap_company_item">Вопросы</div>
-            <div class="minimap_company_item">Контакты</div>
+            <div class="minimap_company_item"><a href="#jumbo_slider">О нас</a></div>
+            <div class="minimap_company_item"><a href="#works">Наши работы</a></div>
+            <div class="minimap_company_item"><a href="#reviews">Отзывы</a></div>
+            <div class="minimap_company_item"><a href="#clients">Клиенты</a></div>
+            <div class="minimap_company_item"><a href="#contacts">Контакты</a></div>
           </div>
           <div class="col-xs-3">
             <div>АДРЕС</div><br>
@@ -501,11 +531,11 @@
             <div>gaz-on21@bk.ru</div>
 
           </div>
-          <div class="col-xs-3">
+          <!-- <div class="col-xs-3">
             <div>ПОДЕЛИТЬСЯ</div><br>
             <div>Расскажите друзьям о нас<br> в социальных сетях</div>
             <div></div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -546,7 +576,7 @@
       </div>
     </div>  
     <!-- MODAL END -->
-
+    <div id="scroller" class="b-top" style="display: none;"><span class="b-top-but">наверх</span></div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -569,6 +599,7 @@
     <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     <script type="text/javascript" src="/js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="/js/language/ru_RU.js"></script>
+    <script type="text/javascript" src="/js/anchor.js"></script>
 
 
     

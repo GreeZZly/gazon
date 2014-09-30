@@ -24,6 +24,8 @@ $(document).ready(function(){
 		        return 'г.Магнитогорск';
 		      case 4:
 		        return 'г.Дмитровград';
+		      case 5:
+		        return 'г.Волжск';
 		      
 		     }
 		  }
@@ -56,7 +58,13 @@ $(document).ready(function(){
 		$("#modal_bg").fadeOut();
 	});
 	 
+	$(window).scroll(function () {if ($(this).scrollTop() > 0) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
+    $('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
 
+    $("#faq_slide img").on('click', function(){
+    	
+    	$("#faq_wrap").slideToggle();
+    });
 		// $('#calc_form').bootstrapValidator({
 	 //        message: 'This value is not valid',
 	 //        feedbackIcons: {
