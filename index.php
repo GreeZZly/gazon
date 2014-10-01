@@ -69,11 +69,13 @@
                   <li><a href="#contacts">КОНТАКТЫ</a></li>
                   <li><a  class="dropdown-toggle" data-toggle="dropdown" href="">ВАШ ГОРОД<br><span id="nav_city"><?php echo $city['city']['name_ru'];?></span> <span class="glyphicon glyphicon-chevron-down"></span></a>
                      <ul class="dropdown-menu" id="city_list">
-                      <li><a href="">Чебоксары</a></li>
-                      <li><a href="">Йошкар-Ола</a></li>
-                      <li><a href="">Волжск</a></li>
-                      <li><a href="">Дмитровград</a></li>
                       <li><a href="">Москва</a></li>
+                      <li><a href="">Ульяновск</a></li>
+                      <li><a href="">Нижний Новгород</a></li>
+                      <li><a href="">Чебоксары</a></li>
+                      <li><a href="">Канаш</a></li>
+                      <li><a href="">Алатырь</a></li>
+                      <li><a href="">Волжск</a></li>
                     </ul>
                   </li>
                   
@@ -489,6 +491,16 @@
             <li>
               <div class="col-xs-2">Адрес:<br><br>ул.Панфилова, 33А, офис 103, напротив маг. "Пятерочка"</div>
               <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Светлана Олеговна Сокова</div>
+              <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
+                <div class="map">
+                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <div class="col-xs-2">Адрес:<br><br>ул. 4-я кленовая ,д.6</div>
+              <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Талипов Энвер Османович<br>+7-905-182-13-96</div>
               <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
                 <div class="map">
                   <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>

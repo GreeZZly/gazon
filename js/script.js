@@ -17,16 +17,18 @@ $(document).ready(function(){
 		buildPager: function(slideIndex){
 		    switch(slideIndex){
 		      case 0:
-		        return 'г.Чебоксары';
+		        return 'г.Москва';
 		      case 1:
-		        return 'г.Йошкар-Ола';
-		      case 2:
 		        return 'г.Ульяновск';
+		      case 2:
+		        return 'г.Нижний Новгород';
 		      case 3:
-		        return 'г.Магнитогорск';
+		        return 'г.Чебоксары';
 		      case 4:
-		        return 'г.Дмитровград';
+		        return 'г.Канаш';
 		      case 5:
+		        return 'г.Алатырь';
+		      case 6:
 		        return 'г.Волжск';
 		      
 		     }
