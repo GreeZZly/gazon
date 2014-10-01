@@ -106,12 +106,12 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: -100px;
+	left: 0px;
 	background: url(/img/gaz-on_0002_Arrow-Left.png) no-repeat;
 }
 
 .bx-wrapper .bx-next {
-	right: -100px;
+	right: 0px;
 	background: url(/img/gaz-on_0001_Arrow-Right.png) no-repeat;
 }
 

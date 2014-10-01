@@ -67,7 +67,15 @@
                   <li><a href="#reviews">ОТЗЫВЫ</a></li>
                   <li><a href="#clients">КЛИЕНТЫ</a></li>
                   <li><a href="#contacts">КОНТАКТЫ</a></li>
-                  <li><a href="#">ВАШ ГОРОД<br><span id="nav_city"><?php echo $city['city']['name_ru'];?></span> <span class="glyphicon glyphicon-chevron-down"></span></a></li>
+                  <li><a  class="dropdown-toggle" data-toggle="dropdown" href="">ВАШ ГОРОД<br><span id="nav_city"><?php echo $city['city']['name_ru'];?></span> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                     <ul class="dropdown-menu" id="city_list">
+                      <li><a href="">Чебоксары</a></li>
+                      <li><a href="">Йошкар-Ола</a></li>
+                      <li><a href="">Волжск</a></li>
+                      <li><a href="">Дмитровград</a></li>
+                      <li><a href="">Москва</a></li>
+                    </ul>
+                  </li>
                   
                 </ul>
               </div><!-- /.navbar-collapse -->

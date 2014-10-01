@@ -8,7 +8,9 @@ $(document).ready(function(){
 	});
 
 	$(".multi_image").fancybox();
-	$(".bxslider_rev").bxSlider();
+	$(".bxslider_rev").bxSlider({
+		controls: false
+	});
 	$("#contact_slider").bxSlider({
 		controls: false,
 		pagerLocation: 'top',
@@ -46,9 +48,7 @@ $(document).ready(function(){
 	var win_h = $(window).height()/2;
 
 	var modal_h = win_h - 140;
-	// console.log(modal_h);
 	$("#modal_window").css({'top':modal_h+'px'});
-	console.log(win_h,modal_h);
 	$(".consult_btn").on('click', function(e){
 		e.preventDefault();
 		$("#modal_bg").fadeIn();
@@ -64,6 +64,11 @@ $(document).ready(function(){
     $("#faq_slide img").on('click', function(){
     	
     	$("#faq_wrap").slideToggle();
+    });
+    $("#city_list li a").on('click', function(e){
+    	e.preventDefault();
+    	var chosen_city = $(this).html();
+    	$("#nav_city").html(chosen_city);
     });
 		// $('#calc_form').bootstrapValidator({
 	 //        message: 'This value is not valid',
@@ -104,38 +109,17 @@ $(document).ready(function(){
 	 //    });
 	$("#calcSubmit").on('click', function(e){
 		e.preventDefault();
-		// $("input[type='text']").each(function(){
-		// 	if($(this).val() == ''){
-		// 		$(this).css({'border':'1px solid red'});
-		// 		$(this).attr('placeholder', 'Пустое значение!');
-		// 	}
-		// 	else {
-		// 		$(this).css({'border':'1px solid #ccc'});
-				
-		// 	}
-
-		// 	if($(this).val() == )
-		// });
-		// if($("input[type='text']").val() == ''){
-			// var par = $(this).parent(".form-group");
-			// console.log(par);
-			// par.children(".form_error").removeClass('hidden');
-			// $(".form_error").html('Пустое значение!');
-		// }
 		var stUst = $("#stUst").val();
 		var CenaBenz = $("#CenaBenz").val();
 		var CenaGaz = $("#CenaGaz").val();
 		var Rashod100 = $("#Rashod100").val();
 		var SrSutProb = $("#SrSutProb").val();
-		// console.log(stUst,CenaBenz,CenaGaz,Rashod100,SrSutProb);
 		var RasDayLitr = SrSutProb/100 * Rashod100;
 		var RasDayBenz = RasDayLitr * CenaBenz;
 		var RasDayGaz = RasDayLitr * CenaGaz;
-		// console.log( Math.round(RasDayLitr).toFixed(0),Math.round(RasDayBenz).toFixed(0),Math.round(RasDayGaz).toFixed(0));
 		var EconDay = RasDayBenz - RasDayGaz;
 		var EconYear = EconDay * 365;
 		var OkupDay = stUst/EconDay;
-		// console.log(Math.round(EconDay).toFixed(0),Math.round(EconYear).toFixed(0),Math.round(OkupDay).toFixed(0));
 		$("#EconDay").html(Math.round(EconDay).toFixed(0));
 		$("#EconYear").html(Math.round(EconYear).toFixed(0));
 		$("#OkupDay").html(Math.round(OkupDay).toFixed(0));
