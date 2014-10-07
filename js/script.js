@@ -126,4 +126,24 @@ $(document).ready(function(){
 		$("#EconYear").html(Math.round(EconYear).toFixed(0));
 		$("#OkupDay").html(Math.round(OkupDay).toFixed(0));
 	});
+
+	// header phone change
+	var city = $("#nav_city").html();
+	var cityphone = {
+		'Москва':'+7 (499) 713-55-15',
+		'Ульяновск':'+7 (8422) 494-240',
+		'Нижний Новгород':'+7 (831)213-75-57',
+		'Чебоксары':'+7 (8352) 380-730',
+		'Канаш':'+7 (83533) 4-44-44',
+		'Алатырь':'+7 (83533) 4-44-44',
+		'Волжск':'+7 (83533) 4-44-44'
+	}
+	if($.inArray(city, cityphone) == -1){
+
+		$('#header_phone').html(cityphone['Москва']);
+	}
+	$("#city_list li a").on('click', function(){
+		var current_city = $(this).attr('data-phone');
+		$('#header_phone').html(current_city);
+	});
 });

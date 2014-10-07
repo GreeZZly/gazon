@@ -69,13 +69,13 @@
                   <li><a href="#contacts">КОНТАКТЫ</a></li>
                   <li><a  class="dropdown-toggle" data-toggle="dropdown" href="">ВАШ ГОРОД<br><span id="nav_city"><?php echo $city['city']['name_ru'];?></span> <span class="glyphicon glyphicon-chevron-down"></span></a>
                      <ul class="dropdown-menu" id="city_list">
-                      <li><a href="">Москва</a></li>
-                      <li><a href="">Ульяновск</a></li>
-                      <li><a href="">Нижний Новгород</a></li>
-                      <li><a href="">Чебоксары</a></li>
-                      <li><a href="">Канаш</a></li>
-                      <li><a href="">Алатырь</a></li>
-                      <li><a href="">Волжск</a></li>
+                      <li><a href="" data-phone="+7 (499) 713-55-15">Москва</a></li>
+                      <li><a href="" data-phone="+7 (8422) 494-240">Ульяновск</a></li>
+                      <li><a href="" data-phone="+7 (831)213-75-57">Нижний Новгород</a></li>
+                      <li><a href="" data-phone="+7 (8352) 380-730">Чебоксары</a></li>
+                      <li><a href="" data-phone="+7 (83533) 4-44-44">Канаш</a></li>
+                      <li><a href="" data-phone="+7 (83531) 4-44-44">Алатырь</a></li>
+                      <li><a href="" data-phone="+7 (83631) 4-44-44">Волжск</a></li>
                     </ul>
                   </li>
                   
@@ -477,26 +477,53 @@
         <div class="row">
           <ul id="contact_slider">
             <li>
-              <div class="col-xs-2">Адрес:<br><br>ул.Панфилова, 33А, офис 103, напротив маг. "Пятерочка"</div>
-              <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Светлана Олеговна Сокова</div>
+              <div class="row">
+              <div class="col-xs-2">Адрес:<br><br>2-я Магистральная д.16 А стр.1<br><br>Тел.:<br>8(499)713-55-15<br>+7(968)808-64-65</div>
+              <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Александр</div>
               <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
                 <div class="map">
-                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
+                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=LGpDdjOE7f7yQjSH27v1vskEXP6lDJ-f&width=455&height=250"></script>
                 </div>
               </div>
-
+              </div>
             </li>
             <li>
+              <div class="row">
               <div class="col-xs-2">Адрес:<br><br>ул. Урицкого, 98 А<br>тел.49-42-40 </div>
               <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Светлана Олеговна Сокова</div>
               <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
                 <div class="map">
-                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
+                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=uCmkkB6Y35u9NsbqAL1Z5XM8KS24T012&width=455&height=250"></script>
                 </div>
               </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+              <div class="col-xs-2">Адрес:<br><br>ул. Родниковая 75<br>проспект Ленина 27/1<br>Тел.:213-75-57</div>
+              <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Владимир</div>
+              <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
+                <div class="map">
+                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=DQxzTBS6i0asVEwcbsCjeqkqTz-wMWN0&width=455&height=250"></script>
+                </div>
+                
+              </div>              </div>
+              
 
             </li>
             <li>
+              <div class="row">
+              <div class="col-xs-2">Адрес:<br><br>Марпосадское шоссе, 22<br><br>Тел.: +7(8352)380-730</div>
+              <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Андрей Архипов</div>
+              <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
+                <div class="map">
+                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=zEzrEtAcCyJFULCGGEkjpwMTpVXsQHjE&width=455&height=250"></script>
+                </div>
+              </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
               <div class="col-xs-2">Адрес:<br><br>ул.Панфилова, 33А, офис 103, напротив маг. "Пятерочка"</div>
               <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Светлана Олеговна Сокова</div>
               <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
@@ -504,29 +531,10 @@
                   <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
                 </div>
               </div>
-
-            </li>
-            <li>
-              <div class="col-xs-2">Адрес:<br><br>ул.Панфилова, 33А, офис 103, напротив маг. "Пятерочка"</div>
-              <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Светлана Олеговна Сокова</div>
-              <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
-                <div class="map">
-                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
-                </div>
               </div>
-
             </li>
             <li>
-              <div class="col-xs-2">Адрес:<br><br>ул.Панфилова, 33А, офис 103, напротив маг. "Пятерочка"</div>
-              <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Светлана Олеговна Сокова</div>
-              <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
-                <div class="map">
-                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
-                </div>
-              </div>
-
-            </li>
-            <li>
+              <div class="row">
               <div class="col-xs-2">Адрес:<br><br>ул. 4-я кленовая ,д.6</div>
               <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Талипов Энвер Османович<br>+7-905-182-13-96</div>
               <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
@@ -534,9 +542,10 @@
                   <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
                 </div>
               </div>
-
+              </div>
             </li>
             <li>
+              <div class="row">
               <div class="col-xs-2">Адрес:<br><br>ул. 4-я кленовая ,д.6</div>
               <div class="col-xs-2 col-xs-offset-1">Вас обслужит:<br><br>Талипов Энвер Османович<br>+7-905-182-13-96</div>
               <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
@@ -544,7 +553,7 @@
                   <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=SW7-rE8fZXe6zlab4EJxKzwAvlwJQeTQ&width=455&height=250"></script>
                 </div>
               </div>
-
+              </div>
             </li>
           </ul>
          <!--  <div id="bx-pager">
