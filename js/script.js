@@ -24,11 +24,11 @@ $(document).ready(function(){
 		        return 'г.Нижний Новгород';
 		      case 3:
 		        return 'г.Чебоксары';
+		      // case 4:
+		      //   return 'г.Канаш';
+		      // case 5:
+		      //   return 'г.Алатырь';
 		      case 4:
-		        return 'г.Канаш';
-		      case 5:
-		        return 'г.Алатырь';
-		      case 6:
 		        return 'г.Волжск';
 		      
 		     }
@@ -140,7 +140,7 @@ $(document).ready(function(){
 	}
 	if($.inArray(city, cityphone) == -1){
 
-		$('#header_phone').html(cityphone['Москва']);
+		$('#header_phone').html(cityphone['Чебоксары']);
 	}
 	$("#city_list li a").on('click', function(){
 		var current_city = $(this).attr('data-phone');
