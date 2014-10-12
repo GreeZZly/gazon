@@ -70,12 +70,12 @@
                   <li><a  class="dropdown-toggle" data-toggle="dropdown" href="">ВАШ ГОРОД<br><span id="nav_city"><?php echo $city['city']['name_ru'];?></span> <span class="glyphicon glyphicon-chevron-down"></span></a>
                      <ul class="dropdown-menu" id="city_list">
                       <li><a href="" data-phone="+7 (499) 713-55-15">Москва</a></li>
-                      <li><a href="" data-phone="+7 (8422) 494-240">Ульяновск</a></li>
-                      <li><a href="" data-phone="+7 (831)213-75-57">Нижний Новгород</a></li>
-                      <li><a href="" data-phone="+7 (8352) 380-730">Чебоксары</a></li>
+                      <li><a href="" data-phone="+7 (8422) 49-43-41">Ульяновск</a></li>
+                      <li><a href="" data-phone="+7 (831) 213-75-57">Нижний Новгород</a></li>
+                      <li><a href="" data-phone="+7 (8352) 37-99-30">Чебоксары</a></li>
                       <!-- <li><a href="" data-phone="+7 (83533) 4-44-44">Канаш</a></li> -->
                       <!-- <li><a href="" data-phone="+7 (83531) 4-44-44">Алатырь</a></li> -->
-                      <li><a href="" data-phone="+7 (83631) 4-44-44">Волжск</a></li>
+                      <li><a href="" data-phone="+7 (905) 182-13-96">Волжск</a></li>
                     </ul>
                   </li>
                   
@@ -95,8 +95,10 @@
       <div class="container" id="jumbo_slider"><a name="jumbo_slider"></a>
         <div class="row">
           <ul id="jumbo_bxslider">
-            <li><img src="/img/jumbo/slider2.png"></li>
-            <li><img src="/img/jumbo/slider1.png"></li>
+            <li><img src="/img/jumbo/001.jpg"></li>
+            <li><img src="/img/jumbo/002.jpg"></li>
+            <li><img src="/img/jumbo/003.jpg"></li>
+            <li><img src="/img/jumbo/004.jpg"></li>
           </ul>          
         </div>
       </div>
@@ -489,7 +491,7 @@
             </li>
             <li>
               <div class="row">
-              <div class="col-xs-2">Адрес:<br><br>ул. Урицкого, 98 А<br><br>Тел.: +7(8422)49-42-40 </div>
+              <div class="col-xs-2">Адрес:<br><br>ул. Урицкого, 98 А<br><br>Тел.: +7(8422)49-43-41 </div>
               <div class="col-xs-2 col-xs-offset-1">На Ваши вопросы ответит:<br><br>Светлана Сокова<br><br><img src="/img/employes/ulyanovsk.jpg"></div>
               <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
                 <div class="map">
@@ -513,7 +515,7 @@
             </li>
             <li>
               <div class="row">
-              <div class="col-xs-2">Адрес:<br><br>Марпосадское шоссе, 22<br><br>Тел.: +7(8352)380-730</div>
+              <div class="col-xs-2">Адрес:<br><br>Марпосадское шоссе, 22<br><br>Тел.: +7(8352)37-99-30</div>
               <div class="col-xs-2 col-xs-offset-1">На Ваши вопросы ответит:<br><br>Андрей Архипов<br><br><img src="/img/employes/cheb.jpg"></div>
               <div class="col-xs-6 col-xs-offset-1">Как добраться:<br><br>
                 <div class="map">
@@ -584,7 +586,7 @@
           <div class="col-xs-3">
             <div>АДРЕС</div><br>
             <div>Чебоксары, Марпосадское шоссе, 22</div><br>
-            <div>Тел.: +7 (8352) 380-730</div>
+            <div>Тел.: +7 (8352) 37-99-30</div>
             <div>gaz-on21@bk.ru</div>
 
           </div>
