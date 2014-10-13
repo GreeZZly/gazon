@@ -69,13 +69,13 @@
                   <li><a href="#contacts">КОНТАКТЫ</a></li>
                   <li><a  class="dropdown-toggle" data-toggle="dropdown" href="">ВАШ ГОРОД<br><span id="nav_city"><?php echo $city['city']['name_ru'];?></span> <span class="glyphicon glyphicon-chevron-down"></span></a>
                      <ul class="dropdown-menu" id="city_list">
-                      <li><a href="" data-phone="+7 (499) 713-55-15" data-index="0">Москва</a></li>
-                      <li><a href="" data-phone="+7 (8422) 49-43-41" data-index="1">Ульяновск</a></li>
-                      <li><a href="" data-phone="+7 (831) 213-75-57" data-index="2">Нижний Новгород</a></li>
-                      <li><a href="" data-phone="+7 (8352) 37-99-30" data-index="3">Чебоксары</a></li>
+                      <li><a href="" data-phone="+7 (499) 713-55-15" data-index="0" data-name="Москва">Москва</a></li>
+                      <li><a href="" data-phone="+7 (8422) 49-43-41" data-index="1" data-name="Ульяновск">Ульяновск</a></li>
+                      <li><a href="" data-phone="+7 (831) 213-75-57" data-index="2" data-name="Нижний Новгород">Нижний Новгород</a></li>
+                      <li><a href="" data-phone="+7 (8352) 37-99-30" data-index="3" data-name="Чебоксары">Чебоксары</a></li>
                       <!-- <li><a href="" data-phone="+7 (83533) 4-44-44">Канаш</a></li> -->
                       <!-- <li><a href="" data-phone="+7 (83531) 4-44-44">Алатырь</a></li> -->
-                      <li><a href="" data-phone="+7 (905) 182-13-96" data-index="4">Волжск</a></li>
+                      <li><a href="" data-phone="+7 (905) 182-13-96" data-index="4" data-name="Волжск">Волжск</a></li>
                     </ul>
                   </li>
                   

@@ -143,9 +143,13 @@ $(document).ready(function(){
 
 		$('#header_phone').html(cityphone['Чебоксары']);
 	}
-	var city_index = $.inArray(city, cityphone);
-	console.log(city,city_index,cityphone[3]);
-	$('.bx-pager-item a[data-slide-index="'+city_index+'"]').click();
+	// var city_index = $.inArray(city, cityphone);
+	// console.log(city,city_index,cityphone[3]);
+	var city_index = $('#city_list li a[data-name="'+city+'"]').attr('data-index');
+	if (city_index != undefined){
+		$('.bx-pager-item a[data-slide-index="'+city_index+'"]').click();
+	}
+	// $('.bx-pager-item a[data-slide-index="'+city_index+'"]').click();
 	
 
 	$("#city_list li a").on('click', function(){
