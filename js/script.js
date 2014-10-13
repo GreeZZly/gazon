@@ -14,7 +14,7 @@ $(document).ready(function(){
 	$("#contact_slider").bxSlider({
 		controls: false,
 		pagerLocation: 'top',
-		startSlide: 3,
+		// startSlide: 3,
 		buildPager: function(slideIndex){
 		    switch(slideIndex){
 		      case 0:
