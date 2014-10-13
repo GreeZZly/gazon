@@ -144,7 +144,7 @@ $(document).ready(function(){
 		$('#header_phone').html(cityphone['Чебоксары']);
 	}
 	var city_index = $.inArray(city, cityphone);
-	console.log(city_index);
+	console.log(city,city_index,cityphone[3]);
 	$('.bx-pager-item a[data-slide-index="'+city_index+'"]').click();
 	
 
