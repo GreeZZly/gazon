@@ -144,6 +144,10 @@ $(document).ready(function(){
 	}
 	$("#city_list li a").on('click', function(){
 		var current_city = $(this).attr('data-phone');
+		var current_index = $(this).attr('data-index');
 		$('#header_phone').html(current_city);
+		$('.bx-pager-item a[data-slide-index="'+current_index+'"]').click();
 	});
+
+
 });
