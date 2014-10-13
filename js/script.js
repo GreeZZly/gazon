@@ -14,6 +14,7 @@ $(document).ready(function(){
 	$("#contact_slider").bxSlider({
 		controls: false,
 		pagerLocation: 'top',
+		startSlide: 3,
 		buildPager: function(slideIndex){
 		    switch(slideIndex){
 		      case 0:
@@ -134,14 +135,18 @@ $(document).ready(function(){
 		'Ульяновск':'+7 (8422) 49-43-41',
 		'Нижний Новгород':'+7 (831)213-75-57',
 		'Чебоксары':'+7 (8352)  37-99-30',
-		'Канаш':'+7 (83533) 4-44-44',
-		'Алатырь':'+7 (83533) 4-44-44',
+		// 'Канаш':'+7 (83533) 4-44-44',
+		// 'Алатырь':'+7 (83533) 4-44-44',
 		'Волжск':'+7 (905) 182-13-96'
 	}
 	if($.inArray(city, cityphone) == -1){
 
 		$('#header_phone').html(cityphone['Чебоксары']);
 	}
+	var city_index = $.inArray(city, cityphone);
+	$('.bx-pager-item a[data-slide-index="'+city_index+'"]').click();
+	
+
 	$("#city_list li a").on('click', function(){
 		var current_city = $(this).attr('data-phone');
 		var current_index = $(this).attr('data-index');
